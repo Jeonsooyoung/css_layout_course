@@ -1,0 +1,84 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.poster {
+  width: 548px;
+  height: 780px;
+  display: grid;
+  grid-template-columns: 360px auto;
+  grid-template-rows: 88px 360px auto;
+  grid-template-areas:
+    "top top"
+    "middle-left middle-right"
+    "bottom bottom";
+  gap: 12px;
+}
+
+.poster__top {
+  background: black;
+  color: #dde1d4;
+  font-size: 12px;
+  font-weight: 600;
+  grid-area: top;
+  display: grid;
+  grid-template-columns: 120px 246px auto;
+  grid-template-rows: 88px;
+}
+
+.poster__top__column {
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+}
+
+.poster__middle {
+  background: rgb(225, 79, 43);
+  color: black;
+}
+
+.poster__middle--left {
+  grid-area: middle-left;
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+  padding-bottom: 0;
+  font-size: 128px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.poster__middle--right {
+  grid-area: middle-right;
+}
+
+.poster__bottom {
+  background: rgb(225, 79, 43);
+  grid-area: bottom;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  padding-top: 0;
+}
+
+.poster__bottom__title {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.poster__bottom__subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #dde1d4;
+  margin-top: 24px;
+  margin-left: 4px;
+}
