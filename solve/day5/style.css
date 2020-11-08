@@ -12,25 +12,23 @@ img {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: 120px repeat(auto-fill, minmax(150px, 350px));
+  grid-template-columns: repeat(auto-fill, minmax(16.6%, 1fr));
+  grid-template-rows: 120px repeat(auto-fill, minmax(150px, 1fr));
 }
 .grid > div:not(.box-1) {
   display: grid;
-  align-content: space-between;
+  align-content: space-around;
   text-align: center;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   box-sizing: border-box;
 }
 .grid > div:not(.box-1) > span:first-child {
   display: block;
-  margin-top: 30px;
 }
 .grid > div:not(.box-1) > span:last-child {
   display: block;
-  margin-bottom: 20px;
 }
 
 .box-1 {
@@ -63,4 +61,7 @@ img {
 }
 .box-13 {
   background: #dfbce1;
+}
+img {
+  object-fit: cover;
 }

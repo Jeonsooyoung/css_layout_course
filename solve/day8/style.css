@@ -90,6 +90,9 @@ body {
 .title {
   font-size: 12px;
 }
+.inner-box {
+  padding: 10px;
+}
 .inner-box ul li {
   position: relative;
   display: block;

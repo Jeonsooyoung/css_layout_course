@@ -10,55 +10,53 @@ body {
   height: 100vh;
   margin: 0 auto;
 }
+.color-white {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+}
 
 .wrap-container {
   padding: 10px;
   background: #fff;
 }
-.wrap-box.bk {
+.wrap-box {
   display: grid;
-  grid-template-columns: repeat(3, 203px);
-  grid-template-rows: repeat(1, 80px);
+  grid-template-columns: repeat(3, 210px);
+  grid-template-rows: 80px 400px 250px;
   row-gap: 10px;
 }
 .wrap-box .bk-box {
-  position: relative;
+  padding: 10px;
   font-weight: bold;
   font-size: 16px;
   background: #000;
   color: #fff;
 }
-.wrap-box .box {
-  position: relative;
-}
-.wrap-box .box span {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-}
-.wrap-box.org {
-  display: grid;
-  grid-template-columns: 400px 200px;
-  grid-template-rows: 400px 140px 100px;
-  gap: 10px;
-}
-.wrap-box.org .org-box {
+.wrap-box .org-box {
+  padding: 10px;
   background: #f14011;
   font-weight: bold;
   font-size: 120px;
   color: #000000;
 }
+
 .region-box {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.wrap-box .color-white {
-  display: block;
-  font-size: 28px;
-  color: #fff;
-}
-.bottom-box {
-  margin-top: -10px;
+.content-box {
+  display: flex;
+  align-items: flex-end;
+
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.region-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  grid-column: 1/ -1;
+  grid-row: -2;
 }
